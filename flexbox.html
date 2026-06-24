@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Box</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        div{
+            height:100px;
+            width:100px;
+            display: inline-block;
+            border : 2px solid black;
+            justify-content: space-evenly;
+        }
+        #container{
+            width:800px;
+            height:200px;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: pink;
+        }
+        #box3{
+            background-color: brown;
+        }
+        #box4{
+            background-color: red;
+        }
+        #box5{
+            background-color: purple;
+        }
+    </style>
 </head>
 <body>
-    
+    display: flex == activted flex-box property
+    flexbox-direction:row; (DEFAULT VALUE)
+    flexbox-direction:row-reeverse;
+    flexbox-direction:column;
+    flexbox-direction:column-reverse;
+
+    flex = main axis = x-axis
+
+    justify-content : flex-start,flex-end,center,space evenly
+    flex-wrap : nowrap,wrap,wrap-reverse
+    align-item: alignment along the cross axis.
+    align-content : aligment of space between & around the content
+    <div id="container">
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <div id="box3">box3</div>
+        <div id="box4">box4</div>
+        <div id="box5">box5</div>
+    </div>
 </body>
 </html>
