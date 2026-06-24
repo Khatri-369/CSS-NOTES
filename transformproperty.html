@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORM</title>
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: blue;
+            
+            transition : all 1s ease-in 0s;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        div:hover{
+            height:200px;
+            width:200px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: red;
+            font-size: 25px;
+            color: white;
+            
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- transform: rotate(x deg); -->
+     <div >
+        HOLA !
+    </div>
+</body>
+</html>
