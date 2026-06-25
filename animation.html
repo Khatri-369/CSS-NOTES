@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <STYLE>
+        div{
+            height:100px;
+            width:100px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position:relative;
+            
+            /* animation-name : coloranimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-delay : 0s;
+            animation-iteration-count: infinite;
+            /* animation-direction: normal,reverse,alternate;alternate-reverse */
+
+            /* shorthand : animation-name | duration | timing-function | delay | iteration-count | animation-direction */
+            animation: shapeanimate 4s ease-in 1s infinite normal; 
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        /* @keyframes animation1{
+            from{font-size : 20px;}
+            to {font-size : 40px;}
+        } */
+        @keyframes coloranimate{
+            from{
+                background-color: blue;
+                left:0px; 
+            }
+            to {
+                background-color : red;
+                left:200px;
+                border-radius: 50%;
+            }
+        }
+        @keyframes shapeanimate{
+            0%{
+                background-color: blue;
+                left:0px; 
+            }
+            50%{
+                background-color : red;
+                left:200px;
+                border-radius: 50%;
+            }
+            100%{
+                background-color: rgb(19, 231, 8);
+                left:0px;
+            }
+        }
+    </STYLE>
+</head>
+<body>
+    <div >
+        CIRCLE
+    </div>
+</body>
+</html>
